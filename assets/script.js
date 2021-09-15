@@ -2,16 +2,16 @@
         Album Cover Slider
 --------------------------------*/
 //start added by Chase
-var a = document.getElementsByTagName('a');
+var carousel = document.getElementsByClassName('carousel');
 var cfImg = document.getElementsByClassName('coverflow__image');
 
 var scaleI = 0;
-for (scaleI; scaleI < a.length; scaleI++) {
+for (scaleI; scaleI < carousel.length; scaleI++) {
 	if (scaleI === 3) {
 		continue;
 	} else {
-		a[scaleI].style.cursor = 'default';
-		a[scaleI].addEventListener('click', prevDef);
+		carousel[scaleI].style.cursor = 'default';
+		carousel[scaleI].addEventListener('click', prevDef);
 	}
 }
 
@@ -20,9 +20,9 @@ function prevDef(e) {
 }
 
 function forScale(coverflowPos) {
-	for (scaleI = 0; scaleI < a.length; scaleI++) {
-		a[scaleI].style.cursor = 'default';
-		a[scaleI].addEventListener('click', prevDef);
+	for (scaleI = 0; scaleI < carousel.length; scaleI++) {
+		carousel[scaleI].style.cursor = 'default';
+		carousel[scaleI].addEventListener('click', prevDef);
 	}
 	for (scaleI = 0; scaleI < cfImg.length; scaleI++) {
 		if (cfImg[scaleI].getAttribute('data-coverflow-index') == coverflowPos) {

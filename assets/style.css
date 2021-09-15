@@ -399,26 +399,26 @@ section {
 }
 
 /**** SERVICE END ****/
-/**** PORTFOLIO ****/
+/**** GALLERY ****/
 
-.portfolio-section {
+.gallery-section {
 	padding: 0;
 	overflow-y: scroll;
 }
 
-.portfolio-section .portfolio-section-inner {
+.gallery-section .gallery-section-inner {
 	display: table;
 	table-layout: fixed;
 	width: 100%;
 	max-width: 2000px;
 }
 
-.portfolio-section-inner .portfolio-section-row {
+.gallery-section-inner .gallery-section-row {
 	display: table-row;
 	width: 100%;
 }
 
-.portfolio-section-inner .portfolio-section-data {
+.gallery-section-inner .gallery-section-data {
 	display: table-cell;
 	width: 33.33%;
 	vertical-align: middle;
@@ -430,7 +430,7 @@ section {
 	overflow: hidden;
 }
 
-.portfolio-section-inner .portfolio-section-data .portfolio-section-text {
+.gallery-section-inner .gallery-section-data .gallery-section-text {
 	position: absolute;
 	top: 150%;
 	bottom: 0;
@@ -443,11 +443,11 @@ section {
 	transition: all 0.3s ease-in-out;
 }
 
-.portfolio-section-inner .portfolio-section-data:hover .portfolio-section-text {
+.gallery-section-inner .gallery-section-data:hover .gallery-section-text {
 	top: 0;
 }
 
-.portfolio-section-text .portfolio-section-text-inner {
+.gallery-section-text .gallery-section-text-inner {
 	position: absolute;
 	top: 50%;
 	right: 20px;
@@ -456,38 +456,38 @@ section {
 	transform: translateY(-50%);
 }
 
-.portfolio-section-text p {
+.gallery-section-text p {
 	font-size: 28px;
 	line-height: 1.6;
 	color: #fff;
 }
 
-.portfolio-section-text a {
+.gallery-section-text a {
 	color: var(--orange);
 	font-size: 14px;
 }
 
-.portfolio-section-text a:hover {
+.gallery-section-text a:hover {
 	color: #fff;
 }
 
-.portfolio1 {
+.gallery1 {
 	background-image: url('./images/projects/photo1.jpg');
 }
 
-.portfolio2 {
+.gallery2 {
 	background-image: url('./images/projects/photo2.jpg');
 }
 
-.portfolio3 {
+.gallery3 {
 	background-image: url('./images/projects/photo3.jpg');
 }
 
-.portfolio4 {
+.gallery4 {
 	background-image: url('./images/projects/photo4.jpg');
 }
 
-/**** PORTFOLIO ****/
+/**** GALLERY ****/
 /**** FOOTER ****/
 
 footer {
@@ -1394,7 +1394,7 @@ iframe {
 	position: absolute;
 	top: 50%;
 	padding: 1.5rem 2rem;
-	color: rgba(255, 255, 255, 0.5);
+	color: var(--brown);
 	font-size: 3rem;
 	line-height: 3rem;
 	background: transparent;
@@ -1411,8 +1411,7 @@ iframe {
 .next-arrow:hover,
 .prev-arrow:focus,
 .next-arrow:focus {
-	color: rgba(255, 255, 255, 0.9);
-	background: rgba(0, 0, 0, 0.5);
+	color: rgba(243, 156, 18, 0.5);
 }
 
 .prev-arrow {
