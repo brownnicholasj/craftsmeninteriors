@@ -12,7 +12,8 @@ font-family: 'Spectral SC', serif; */
 
 .css-selector {
 	/* background: linear-gradient(317deg, #ffebcd, #f5deb3, #deb887, #deb887); */
-	background: linear-gradient(317deg, #dcdcdc, #c0c0c0, #a9a9a9, #c4c3d0);
+	/* background: linear-gradient(317deg, #dcdcdc, #c0c0c0, #a9a9a9, #c4c3d0); */
+	background: linear-gradient(317deg, #dcdcdc, #f5deb3, #a9a9a9, #deb887);
 	background-size: 800% 800%;
 
 	-webkit-animation: AnimationName 10s ease infinite;
@@ -257,6 +258,13 @@ h4 {
 	color: var(--black);
 }
 
+.header-content-inner .logo {
+	opacity: 1;
+	position: relative;
+	top: 10;
+	height: 40vh;
+	padding-bottom: 30px;
+}
 .header-content-inner img {
 	opacity: 0.2;
 	position: relative;
