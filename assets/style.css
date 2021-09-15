@@ -14,6 +14,7 @@ body {
 	font-family: 'Merriweather', serif;
 	font-size: 16px;
 	overflow-x: hidden;
+	overflow-y: hidden; /* hiding vertical scroll bar */
 	-webkit-text-stroke: rgba(255, 255, 255, 0.01) 0.1px;
 	-webkit-font-smoothing: antialiased !important;
 }
@@ -97,7 +98,7 @@ nav.navbar-default.affix {
 
 nav.navbar-default .navbar-brand {
 	color: #fff;
-	font-size: 24px;
+	font-size: 3.5vw;
 	font-family: 'Spectral SC', serif;
 	position: relative;
 	top: -5px;
@@ -151,7 +152,7 @@ header:after {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: rgba(0, 0, 0, 0.3);
+	/* background: rgba(0, 0, 0, 0.3); */
 	z-index: 0;
 }
 
@@ -223,17 +224,19 @@ section {
 	padding: 80px 0;
 	position: relative;
 	text-align: center;
+	margin: 20px 0;
+	height: 100%;
 }
 
-.about-section{
-    padding: 45px 0;
+.about-section {
+	padding: 45px 0;
 }
 
 .about-section h3 {
 	font-size: 36px;
 	margin-bottom: 20px;
 	text-transform: uppercase;
-	color: var(--brown)
+	color: var(--brown);
 	letter-spacing: 0.05em;
 }
 
@@ -243,14 +246,13 @@ section {
 	width: 80px;
 	height: 3px;
 	margin: 20px auto 0;
-	background: var(--brown)
+	background: var(--brown);
 }
 
 .about-section p {
 	font-size: 18px;
 	line-height: 1.8;
-	color: var(--brown)
-	margin-bottom: 15px;
+	color: var(--brown);
 }
 
 .btn-default-new {
@@ -261,7 +263,7 @@ section {
 	font-size: 18px;
 	text-transform: capitalize;
 	font-family: 'Merriweather', serif;
-	padding: 0 25px;
+	padding: 0 15px;
 	line-height: 3.1;
 	margin-top: 30px;
 	letter-spacing: 0.05em;
@@ -277,6 +279,59 @@ section {
 	border-color: #c34d34;
 }
 /**** ABOUT END ****/
+/**** TEAM ****/
+.bg-color {
+	background: var(--orange);
+}
+
+.team-section {
+	padding: 80px 0;
+	position: relative;
+	text-align: left;
+	margin: 20px 0;
+	height: 100%;
+	overflow-y: scroll;
+}
+
+.team-header {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	margin-top: 50px;
+}
+
+.team-section img {
+	display: inline;
+	height: 100px;
+	width: 80px;
+}
+
+.team-section h3 {
+	font-size: 30px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	color: var(--brown);
+	letter-spacing: 0.05em;
+	width: 100%;
+}
+
+.team-section h3:after {
+	content: '';
+	display: block;
+	width: 80px;
+	height: 3px;
+	margin: 20px auto 0;
+	background: var(--brown);
+}
+
+.team-section p {
+	font-size: 18px;
+	line-height: 1.8;
+	color: var(--brown);
+}
+
+/**** TEAM END ****/
 /**** SERVICE ****/
 
 .service-section h3 {
@@ -309,6 +364,10 @@ section {
 	line-height: 98px;
 }
 
+.service-items .glyphicon {
+	line-height: 2.5;
+}
+
 .service-items h4 {
 	font-size: 22px;
 	margin-bottom: 20px;
@@ -336,6 +395,7 @@ section {
 
 .portfolio-section {
 	padding: 0;
+	overflow-y: scroll;
 }
 
 .portfolio-section .portfolio-section-inner {
@@ -402,21 +462,39 @@ section {
 .portfolio-section-text a:hover {
 	color: #fff;
 }
+
+.portfolio1 {
+	background-image: url('./images/projects/photo1.jpg');
+}
+
+.portfolio2 {
+	background-image: url('./images/projects/photo2.jpg');
+}
+
+.portfolio3 {
+	background-image: url('./images/projects/photo3.jpg');
+}
+
+.portfolio4 {
+	background-image: url('./images/projects/photo4.jpg');
+}
+
 /**** PORTFOLIO ****/
 /**** FOOTER ****/
 
 footer {
-	background: #222;
+	/* background: #222; */
 	padding: 80px 0;
 	position: relative;
 	text-align: center;
+	height: 100%;
 }
 
 footer h3 {
 	font-size: 36px;
 	margin-bottom: 30px;
 	text-transform: capitalize;
-	color: #fff;
+	color: var(--brown);
 	letter-spacing: 0.05em;
 }
 
@@ -432,7 +510,7 @@ footer h3:after {
 footer p {
 	font-size: 18px;
 	line-height: 1.6;
-	color: #adadad;
+	color: var(--brown);
 }
 
 .gap {
@@ -441,16 +519,40 @@ footer p {
 }
 
 footer span.glyphicon {
-	color: #adadad;
+	color: var(--brown);
 	font-size: 28px;
 	display: block;
 	margin: 0 auto 30px;
 }
 
 footer a {
-	color: #adadad;
+	color: var(--brown);
 }
 
 footer a:hover {
 	color: var(--orange);
+}
+
+iframe {
+	margin: 20px;
+	border: var(--brown);
+	border-radius: 2px;
+}
+
+@media screen and (min-width: 425px) {
+	nav.navbar-default .navbar-brand {
+		font-size: 20px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	nav.navbar-default .navbar-brand {
+		font-size: 22px;
+	}
+}
+
+@media screen and (min-width: 780px) {
+	nav.navbar-default .navbar-brand {
+		font-size: 24px;
+	}
 }
