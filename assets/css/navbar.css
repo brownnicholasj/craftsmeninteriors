@@ -1,0 +1,77 @@
+/**** NAV ****/
+nav.navbar-default {
+	background-color: rgb(238, 237, 237);
+	border-color: rgba(0, 0, 0, 0.05);
+	-ms-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+nav.navbar-default.affix {
+	background-color: var(--black);
+	-ms-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+nav.navbar-default .navbar-brand {
+	color: var(--black);
+	font-size: 3.5vw;
+	font-family: 'Spectral SC', serif;
+	position: relative;
+	top: -5px;
+}
+
+nav.navbar-default .navbar-brand:focus,
+nav.navbar-default .navbar-brand:hover {
+	color: var(--black) !important;
+	background-color: transparent;
+}
+
+nav.navbar-default .navbar-brand > img {
+	display: inline;
+	position: relative;
+	top: -5px;
+	height: 40px;
+	background-color: rgb(238, 237, 237);
+}
+
+nav.navbar-default .navbar-nav > li > a {
+	color: var(--black);
+	font-family: 'Merriweather', serif;
+	font-size: 16px;
+}
+
+nav.navbar-default .navbar-nav > li > a:focus,
+nav.navbar-default .navbar-nav > li > a:hover {
+	color: var(--brown);
+	font-weight: 700;
+	text-shadow: 0.5px 0.5px 0.5px var(--orange);
+	background-color: transparent;
+}
+
+nav.navbar-default .navbar-nav li a.active,
+nav.navbar-default .navbar-nav li a.active:focus,
+nav.navbar-default .navbar-nav li a.active:hover {
+	color: var(--orange);
+	background-color: transparent;
+}
+
+@media screen and (min-width: 425px) {
+	nav.navbar-default .navbar-brand {
+		font-size: 20px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	nav.navbar-default .navbar-brand {
+		font-size: 22px;
+	}
+}
+
+@media screen and (min-width: 780px) {
+	nav.navbar-default .navbar-brand {
+		font-size: 24px;
+	}
+}
+/**** NAV END ****/
